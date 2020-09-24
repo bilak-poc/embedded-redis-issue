@@ -1,0 +1,15 @@
+
+spring:
+  cache:
+    type: redis
+  redis:
+    port: ${embedded.redis.port}
+    password: ${embedded.redis.password}
+    host: ${embedded.redis.host}
+    ssl: false
+
+embedded:
+  redis:
+    clustered: false
+    enabled: true
+    wait-timeout-in-seconds: 10
